@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashSetTesting", "HashSetTesting\HashSetTesting.csproj", "{7D7B3C76-2DBC-4E3C-819C-A22A1C8DF703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashSetTesting", "HashSetTesting\HashSetTesting.csproj", "{7D7B3C76-2DBC-4E3C-819C-A22A1C8DF703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndicesAndRanges", "IndicesAndRanges\IndicesAndRanges.csproj", "{6143BF34-D9EC-47DC-91B6-E47668B4A13E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7D7B3C76-2DBC-4E3C-819C-A22A1C8DF703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D7B3C76-2DBC-4E3C-819C-A22A1C8DF703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D7B3C76-2DBC-4E3C-819C-A22A1C8DF703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6143BF34-D9EC-47DC-91B6-E47668B4A13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6143BF34-D9EC-47DC-91B6-E47668B4A13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6143BF34-D9EC-47DC-91B6-E47668B4A13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6143BF34-D9EC-47DC-91B6-E47668B4A13E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
