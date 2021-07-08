@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashSetTesting", "HashSetTesting\HashSetTesting.csproj", "{7D7B3C76-2DBC-4E3C-819C-A22A1C8DF703}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndicesAndRanges", "IndicesAndRanges\IndicesAndRanges.csproj", "{6143BF34-D9EC-47DC-91B6-E47668B4A13E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndicesAndRanges", "IndicesAndRanges\IndicesAndRanges.csproj", "{6143BF34-D9EC-47DC-91B6-E47668B4A13E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{68C5E21A-D026-412D-BF78-0316F2DFC7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorsTest", "IteratorsTest\IteratorsTest.csproj", "{0CD54E87-13C2-431D-B2F5-D3D600FECA6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{6143BF34-D9EC-47DC-91B6-E47668B4A13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6143BF34-D9EC-47DC-91B6-E47668B4A13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6143BF34-D9EC-47DC-91B6-E47668B4A13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD54E87-13C2-431D-B2F5-D3D600FECA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD54E87-13C2-431D-B2F5-D3D600FECA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD54E87-13C2-431D-B2F5-D3D600FECA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD54E87-13C2-431D-B2F5-D3D600FECA6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CD54E87-13C2-431D-B2F5-D3D600FECA6D} = {68C5E21A-D026-412D-BF78-0316F2DFC7D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
