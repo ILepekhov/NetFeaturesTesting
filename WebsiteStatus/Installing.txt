@@ -1,0 +1,2 @@
+﻿install service over powershell: sc.exe create SERVICE_NAME binpath= path-to-exe-file start= delayed-auto displayname= "Human readable service name"
+uninstall service over powershell: sc.exe delete SERVICE_NAME
