@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockingCollectionTesting",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteStatus", "WebsiteStatus\WebsiteStatus.csproj", "{9657EFB9-4C4A-42EE-8691-752036E7856A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerServiceTesting", "WorkerServiceTesting\WorkerServiceTesting.csproj", "{5CF6DFCE-42D7-4DFA-90D7-FFEA52B1197B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9657EFB9-4C4A-42EE-8691-752036E7856A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9657EFB9-4C4A-42EE-8691-752036E7856A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9657EFB9-4C4A-42EE-8691-752036E7856A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF6DFCE-42D7-4DFA-90D7-FFEA52B1197B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF6DFCE-42D7-4DFA-90D7-FFEA52B1197B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF6DFCE-42D7-4DFA-90D7-FFEA52B1197B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF6DFCE-42D7-4DFA-90D7-FFEA52B1197B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
