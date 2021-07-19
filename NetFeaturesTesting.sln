@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkingDataflowBlocks", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PollyExample", "PollyExample\PollyExample.csproj", "{6B9E7A99-866C-4078-B3F9-0EB73A815FA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxSendingNotificationsToContext", "Concurrency\RxSendingNotificationsToContext\RxSendingNotificationsToContext.csproj", "{C18C73E7-470C-4E77-8A87-D43FD5827FB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RxSendingNotificationsToContext", "Concurrency\RxSendingNotificationsToContext\RxSendingNotificationsToContext.csproj", "{C18C73E7-470C-4E77-8A87-D43FD5827FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsTesting", "RecordsTesting\RecordsTesting.csproj", "{DAA931C1-DF4D-49C2-842A-24675289B81F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,10 @@ Global
 		{C18C73E7-470C-4E77-8A87-D43FD5827FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C18C73E7-470C-4E77-8A87-D43FD5827FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C18C73E7-470C-4E77-8A87-D43FD5827FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA931C1-DF4D-49C2-842A-24675289B81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA931C1-DF4D-49C2-842A-24675289B81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA931C1-DF4D-49C2-842A-24675289B81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA931C1-DF4D-49C2-842A-24675289B81F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
