@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelAggregation", "Conc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskCompletionSourceCancellation", "Concurrency\TaskCompletionSourceCancellation\TaskCompletionSourceCancellation.csproj", "{6C7533D8-3FEA-430B-A2D1-B581FA95367E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkingDataflowBlocks", "Concurrency\LinkingDataflowBlocks\LinkingDataflowBlocks.csproj", "{1D7D1681-E88F-48B9-8134-AE17CC504343}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkingDataflowBlocks", "Concurrency\LinkingDataflowBlocks\LinkingDataflowBlocks.csproj", "{1D7D1681-E88F-48B9-8134-AE17CC504343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollyExample", "PollyExample\PollyExample.csproj", "{6B9E7A99-866C-4078-B3F9-0EB73A815FA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,10 @@ Global
 		{1D7D1681-E88F-48B9-8134-AE17CC504343}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D7D1681-E88F-48B9-8134-AE17CC504343}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7D1681-E88F-48B9-8134-AE17CC504343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B9E7A99-866C-4078-B3F9-0EB73A815FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9E7A99-866C-4078-B3F9-0EB73A815FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9E7A99-866C-4078-B3F9-0EB73A815FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9E7A99-866C-4078-B3F9-0EB73A815FA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
