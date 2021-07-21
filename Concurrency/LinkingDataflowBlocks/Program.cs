@@ -14,8 +14,24 @@ namespace LinkingDataflowBlocks
             //await MultipleBlocksExceptionHandlingExample();
             //UnlinkingExample();
 
-            // TODO: дополнить реальным примером использования с возвратом данных
-            // в книге пока не было такого
+            var multiplyBlock = new TransformBlock<int, int>(item => item * 2);
+            var substractBlock = new TransformBlock<int, int>(item => item - 2);
+
+            DataflowLinkOptions options = new() { PropagateCompletion = true };
+
+            multiplyBlock.LinkTo(substractBlock, options);
+
+            multiplyBlock.Post(10);
+            multiplyBlock.Post(20);
+            multiplyBlock.Complete();
+
+            var firstResult = await substractBlock.ReceiveAsync();
+            var secondResult = await substractBlock.ReceiveAsync();
+
+            Console.WriteLine("First result is: {0}", firstResult);
+            Console.WriteLine("Second result is: {0}", secondResult);
+
+            await substractBlock.Completion;
         }
 
         static async Task LinkingExample()
