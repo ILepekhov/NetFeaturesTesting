@@ -16,22 +16,24 @@ namespace LinkingDataflowBlocks
 
             var multiplyBlock = new TransformBlock<int, int>(item => item * 2);
             var substractBlock = new TransformBlock<int, int>(item => item - 2);
+            var outputBlock = new ActionBlock<int>(item => Console.WriteLine($"processed value: {item}"));
 
             DataflowLinkOptions options = new() { PropagateCompletion = true };
 
             multiplyBlock.LinkTo(substractBlock, options);
+            substractBlock.LinkTo(outputBlock, options);
 
             multiplyBlock.Post(10);
             multiplyBlock.Post(20);
             multiplyBlock.Complete();
 
-            var firstResult = await substractBlock.ReceiveAsync();
-            var secondResult = await substractBlock.ReceiveAsync();
+            //var firstResult = await substractBlock.ReceiveAsync();
+            //var secondResult = await substractBlock.ReceiveAsync();
 
-            Console.WriteLine("First result is: {0}", firstResult);
-            Console.WriteLine("Second result is: {0}", secondResult);
+            //Console.WriteLine("First result is: {0}", firstResult);
+            //Console.WriteLine("Second result is: {0}", secondResult);
 
-            await substractBlock.Completion;
+            await outputBlock.Completion;
         }
 
         static async Task LinkingExample()
