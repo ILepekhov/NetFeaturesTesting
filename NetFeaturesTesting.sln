@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RxThrottlingAndSampling", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsynchronousQueues", "Concurrency\AsynchronousQueues\AsynchronousQueues.csproj", "{E48AD586-5B79-4230-88D6-E76FE07F92FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDelayExample", "TaskDelayExample\TaskDelayExample.csproj", "{413C214F-2F56-4229-BDBE-FB84F64E8514}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskDelayExample", "TaskDelayExample\TaskDelayExample.csproj", "{413C214F-2F56-4229-BDBE-FB84F64E8514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrottlingProgressUpdates", "Concurrency\ThrottlingProgressUpdates\ThrottlingProgressUpdates.csproj", "{3850EFE2-5128-43CD-B393-1C1776516EBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +129,10 @@ Global
 		{413C214F-2F56-4229-BDBE-FB84F64E8514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{413C214F-2F56-4229-BDBE-FB84F64E8514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{413C214F-2F56-4229-BDBE-FB84F64E8514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3850EFE2-5128-43CD-B393-1C1776516EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3850EFE2-5128-43CD-B393-1C1776516EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3850EFE2-5128-43CD-B393-1C1776516EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3850EFE2-5128-43CD-B393-1C1776516EBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +147,7 @@ Global
 		{C18C73E7-470C-4E77-8A87-D43FD5827FB8} = {B0B5F6AA-4D13-4CDA-BD71-7082555272E0}
 		{78D73C3F-09F0-40A3-AADD-DA6DA22BE810} = {B0B5F6AA-4D13-4CDA-BD71-7082555272E0}
 		{E48AD586-5B79-4230-88D6-E76FE07F92FF} = {B0B5F6AA-4D13-4CDA-BD71-7082555272E0}
+		{3850EFE2-5128-43CD-B393-1C1776516EBE} = {B0B5F6AA-4D13-4CDA-BD71-7082555272E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
