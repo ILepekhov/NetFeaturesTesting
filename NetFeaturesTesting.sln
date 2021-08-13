@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsynchronousQueues", "Concu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskDelayExample", "TaskDelayExample\TaskDelayExample.csproj", "{413C214F-2F56-4229-BDBE-FB84F64E8514}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrottlingProgressUpdates", "Concurrency\ThrottlingProgressUpdates\ThrottlingProgressUpdates.csproj", "{3850EFE2-5128-43CD-B393-1C1776516EBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThrottlingProgressUpdates", "Concurrency\ThrottlingProgressUpdates\ThrottlingProgressUpdates.csproj", "{3850EFE2-5128-43CD-B393-1C1776516EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFinallyLoopBrakeTesting", "TryFinallyLoopBrakeTesting\TryFinallyLoopBrakeTesting.csproj", "{87A131A7-46DF-4969-8168-94E46955610E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +135,10 @@ Global
 		{3850EFE2-5128-43CD-B393-1C1776516EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3850EFE2-5128-43CD-B393-1C1776516EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3850EFE2-5128-43CD-B393-1C1776516EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A131A7-46DF-4969-8168-94E46955610E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A131A7-46DF-4969-8168-94E46955610E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A131A7-46DF-4969-8168-94E46955610E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A131A7-46DF-4969-8168-94E46955610E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
