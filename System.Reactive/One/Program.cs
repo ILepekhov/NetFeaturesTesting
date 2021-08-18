@@ -8,7 +8,8 @@ namespace One
         static void Main()
         {
             FakeStockTimer stockTimer = new();
-            StockMonitor stockMonitor = new(stockTimer);
+            // StockMonitor stockMonitor = new(stockTimer);
+            StockMonitorWithObservable stockMonitor = new(stockTimer);
 
             Console.WriteLine("Start polling...");
 
