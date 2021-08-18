@@ -47,7 +47,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskDelayExample", "TaskDel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThrottlingProgressUpdates", "Concurrency\ThrottlingProgressUpdates\ThrottlingProgressUpdates.csproj", "{3850EFE2-5128-43CD-B393-1C1776516EBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFinallyLoopBrakeTesting", "TryFinallyLoopBrakeTesting\TryFinallyLoopBrakeTesting.csproj", "{87A131A7-46DF-4969-8168-94E46955610E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryFinallyLoopBrakeTesting", "TryFinallyLoopBrakeTesting\TryFinallyLoopBrakeTesting.csproj", "{87A131A7-46DF-4969-8168-94E46955610E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "System.Reactive", "System.Reactive", "{5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One", "System.Reactive\One\One.csproj", "{F0FC8CC3-A591-4C4D-B9C0-3F2715F444D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,6 +143,10 @@ Global
 		{87A131A7-46DF-4969-8168-94E46955610E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A131A7-46DF-4969-8168-94E46955610E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A131A7-46DF-4969-8168-94E46955610E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0FC8CC3-A591-4C4D-B9C0-3F2715F444D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0FC8CC3-A591-4C4D-B9C0-3F2715F444D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0FC8CC3-A591-4C4D-B9C0-3F2715F444D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0FC8CC3-A591-4C4D-B9C0-3F2715F444D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +162,7 @@ Global
 		{78D73C3F-09F0-40A3-AADD-DA6DA22BE810} = {B0B5F6AA-4D13-4CDA-BD71-7082555272E0}
 		{E48AD586-5B79-4230-88D6-E76FE07F92FF} = {B0B5F6AA-4D13-4CDA-BD71-7082555272E0}
 		{3850EFE2-5128-43CD-B393-1C1776516EBE} = {B0B5F6AA-4D13-4CDA-BD71-7082555272E0}
+		{F0FC8CC3-A591-4C4D-B9C0-3F2715F444D6} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
