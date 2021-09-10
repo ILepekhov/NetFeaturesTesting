@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NaiveObservable
+namespace ExtensionsLibrary
 {
     public sealed class ConsoleObserver<T> : IObserver<T>
     {
