@@ -9,19 +9,26 @@ namespace TaskResultsProjection
     {
         static void Main(string[] args)
         {
-            var subscription = Observable.Range(1, 10)
-                .SelectMany((number) => IsPrimeAsync(number, TimeSpan.FromMilliseconds(number * 100)),
+            var subscription1 = Observable.Range(1, 10)
+                .SelectMany((number) => IsPrimeAsync(number),
                             (number, isPrime) => new { number, isPrime })
                 .Where(x => x.isPrime)
                 .Select(x => x.number)
-                .SubscribeConsole("prime async detector");
+                .SubscribeConsole("no ordering");
+
+            var subscription2 = Observable.Range(1, 10)
+                .Select(async (number) => new { number, isPrime = await IsPrimeAsync(number) })
+                .Concat()
+                .Where(x => x.isPrime)
+                .Select(x => x.number)
+                .SubscribeConsole("with ordering");
 
             Console.ReadLine();
         }
 
-        private static async Task<bool> IsPrimeAsync(int number, TimeSpan delay)
+        private static async Task<bool> IsPrimeAsync(int number)
         {
-            await Task.Delay(delay);
+            await Task.Delay(TimeSpan.FromMilliseconds(500));
 
             if (number == 2 || number == 3)
             {
