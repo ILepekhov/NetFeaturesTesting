@@ -24,7 +24,9 @@ namespace ObservationStartStopConditions
             Console.WriteLine("Startup time is {0}", DateTime.Now);
 
             return Observable.Range(1, 5)
+                .Log("Range next")
                 .Timestamp()
+                .Log("Timestamp")
                 .DelaySubscription(delay);
         }
 
