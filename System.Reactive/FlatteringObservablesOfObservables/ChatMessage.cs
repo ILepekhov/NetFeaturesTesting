@@ -4,8 +4,6 @@
     {
         #region Properties
 
-        public string Room { get; set; }
-
         public string Content { get; set; }
 
         public int Sender { get; set; }

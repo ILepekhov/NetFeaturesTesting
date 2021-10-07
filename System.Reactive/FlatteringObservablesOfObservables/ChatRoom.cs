@@ -27,8 +27,7 @@ namespace FlatteringObservablesOfObservables
             }
 
             Id = id;
-            Messages = messages
-                .Do(m => m.Room = Id);
+            Messages = messages;
         }
 
         #endregion

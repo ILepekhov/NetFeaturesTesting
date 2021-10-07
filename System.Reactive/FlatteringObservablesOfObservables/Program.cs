@@ -8,8 +8,7 @@ IObservable<ChatRoom> rooms = roomsSubject.AsObservable();
 
 rooms
     .Log("Rooms")
-    .SelectMany(r => r.Messages)
-    .Select(m => new ChatMessageViewModel(m))
+    .SelectMany(room => room.Messages, (room, message) => new ChatMessageViewModel(message) { RoomName = room.Id })
     .Subscribe(vm => AddToDashboard(vm));
 
 void AddToDashboard(ChatMessageViewModel messageVM)

@@ -16,7 +16,7 @@
 
         public string Message => _message.Content;
 
-        public string RoomName => _message.Room;
+        public string RoomName { get; set; }
 
         #endregion
 
@@ -25,6 +25,8 @@
         public ChatMessageViewModel(ChatMessage message)
         {
             _message = message ?? throw new ArgumentNullException(nameof(message));
+
+            RoomName = string.Empty;
         }
 
         #endregion
