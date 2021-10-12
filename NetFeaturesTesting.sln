@@ -97,6 +97,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateWithResultSelector
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcatExample", "System.Reactive\ConcatExample\ConcatExample.csproj", "{DB343B4A-E890-4205-8F56-06303FF581E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeExample", "System.Reactive\MergeExample\MergeExample.csproj", "{609AE1AE-EB03-4ED4-8850-7AA02755C8D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -279,6 +281,10 @@ Global
 		{DB343B4A-E890-4205-8F56-06303FF581E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB343B4A-E890-4205-8F56-06303FF581E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB343B4A-E890-4205-8F56-06303FF581E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609AE1AE-EB03-4ED4-8850-7AA02755C8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609AE1AE-EB03-4ED4-8850-7AA02755C8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609AE1AE-EB03-4ED4-8850-7AA02755C8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609AE1AE-EB03-4ED4-8850-7AA02755C8D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -317,6 +323,7 @@ Global
 		{4ED10F7D-274C-41A1-9388-A07B21E416E5} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
 		{6118E652-EA09-4629-BC7C-06C25A8D859C} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
 		{DB343B4A-E890-4205-8F56-06303FF581E7} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
+		{609AE1AE-EB03-4ED4-8850-7AA02755C8D3} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
