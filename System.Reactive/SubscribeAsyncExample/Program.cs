@@ -1,6 +1,7 @@
 ﻿using ExtensionsLibrary;
 using System;
 using System.Collections.Generic;
+using System.Reactive.Concurrency;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Threading;
@@ -12,7 +13,9 @@ namespace SubscribeAsyncExample
     {
         static void Main(string[] args)
         {
-            var disposable = GeneratePrimes(10)
+            Console.WriteLine($"Starting on the thread '{Thread.CurrentThread.ManagedThreadId}'");
+            var disposable = GeneratePrimes(10, new EventLoopScheduler())
+                .Select(x => $"Prime '{x}', thread '{Thread.CurrentThread.ManagedThreadId}' ")
                 .Timestamp()
                 .SubscribeConsole("primes");
 
@@ -21,6 +24,35 @@ namespace SubscribeAsyncExample
             disposable.Dispose();
 
             Sleep();
+        }
+
+        private static IObservable<int> GeneratePrimes(int amount, IScheduler scheduler = null)
+        {
+            scheduler = scheduler ?? DefaultScheduler.Instance;
+
+            return Observable.Create<int>(o =>
+            {
+                var cancellation = new CancellationDisposable();
+                var scheduledWork = scheduler.Schedule(() =>
+                {
+                    try
+                    {
+                        foreach (var prime in GeneratePrimeNumbersSync(amount))
+                        {
+                            cancellation.Token.ThrowIfCancellationRequested();
+
+                            o.OnNext(prime);
+                        }
+                        o.OnCompleted();
+                    }
+                    catch (Exception ex)
+                    {
+                        o.OnError(ex);
+                    }
+                });
+
+                return new CompositeDisposable(scheduledWork, cancellation);
+            });
         }
 
         private static IObservable<int> GeneratePrimes(int amount)
