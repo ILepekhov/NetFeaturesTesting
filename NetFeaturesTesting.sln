@@ -119,13 +119,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefiningTheScheduler", "Sys
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockingAndNonBlockingRangeOperator", "System.Reactive\ConcurrencyAndSynchonization\BlockingAndNonBlockingRangeOperator\BlockingAndNonBlockingRangeOperator.csproj", "{29D735D6-E2B9-4171-A73E-CCB80148CA1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeIntervalExample", "System.Reactive\ConcurrencyAndSynchonization\TimeIntervalExample\TimeIntervalExample.csproj", "{06CB44BE-FC55-47AD-B243-599586667EF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeIntervalExample", "System.Reactive\ConcurrencyAndSynchonization\TimeIntervalExample\TimeIntervalExample.csproj", "{06CB44BE-FC55-47AD-B243-599586667EF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeoutExample", "System.Reactive\ConcurrencyAndSynchonization\TimeoutExample\TimeoutExample.csproj", "{D1865EC0-6B90-4FD3-B732-E5EFE3575BFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeoutExample", "System.Reactive\ConcurrencyAndSynchonization\TimeoutExample\TimeoutExample.csproj", "{D1865EC0-6B90-4FD3-B732-E5EFE3575BFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelayingNotificationsExample", "System.Reactive\ConcurrencyAndSynchonization\DelayingNotificationsExample\DelayingNotificationsExample.csproj", "{F8E429EE-0E97-4404-BB68-BC674DBE0B75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelayingNotificationsExample", "System.Reactive\ConcurrencyAndSynchonization\DelayingNotificationsExample\DelayingNotificationsExample.csproj", "{F8E429EE-0E97-4404-BB68-BC674DBE0B75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelayingNotificationsIndependentlyExample", "System.Reactive\ConcurrencyAndSynchonization\DelayingNotificationsIndependentlyExample\DelayingNotificationsIndependentlyExample.csproj", "{239A676F-50A2-47A5-BB3A-442D20D0870A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelayingNotificationsIndependentlyExample", "System.Reactive\ConcurrencyAndSynchonization\DelayingNotificationsIndependentlyExample\DelayingNotificationsIndependentlyExample.csproj", "{239A676F-50A2-47A5-BB3A-442D20D0870A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpTenFeatures", "CSharpTenFeatures", "{C21252E9-9ECA-4A89-B4F0-29013CBFE88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStructs", "CSharpTenFeatures\RecordStructs\RecordStructs.csproj", "{33887CD9-A829-420B-A085-2D3EC9AE710A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -365,6 +369,10 @@ Global
 		{239A676F-50A2-47A5-BB3A-442D20D0870A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{239A676F-50A2-47A5-BB3A-442D20D0870A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{239A676F-50A2-47A5-BB3A-442D20D0870A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33887CD9-A829-420B-A085-2D3EC9AE710A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33887CD9-A829-420B-A085-2D3EC9AE710A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33887CD9-A829-420B-A085-2D3EC9AE710A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33887CD9-A829-420B-A085-2D3EC9AE710A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -418,6 +426,7 @@ Global
 		{D1865EC0-6B90-4FD3-B732-E5EFE3575BFA} = {EC99D1F2-3094-43B4-99BA-C908318A0DEB}
 		{F8E429EE-0E97-4404-BB68-BC674DBE0B75} = {EC99D1F2-3094-43B4-99BA-C908318A0DEB}
 		{239A676F-50A2-47A5-BB3A-442D20D0870A} = {EC99D1F2-3094-43B4-99BA-C908318A0DEB}
+		{33887CD9-A829-420B-A085-2D3EC9AE710A} = {C21252E9-9ECA-4A89-B4F0-29013CBFE88C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
