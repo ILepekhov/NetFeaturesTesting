@@ -131,11 +131,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpTenFeatures", "CSharp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordStructs", "CSharpTenFeatures\RecordStructs\RecordStructs.csproj", "{33887CD9-A829-420B-A085-2D3EC9AE710A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrottlingTheNotifications", "System.Reactive\ConcurrencyAndSynchonization\ThrottlingTheNotifications\ThrottlingTheNotifications.csproj", "{37E80FA3-883B-4669-8BF7-3E1552F7F72E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThrottlingTheNotifications", "System.Reactive\ConcurrencyAndSynchonization\ThrottlingTheNotifications\ThrottlingTheNotifications.csproj", "{37E80FA3-883B-4669-8BF7-3E1552F7F72E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplingExample", "System.Reactive\ConcurrencyAndSynchonization\SamplingExample\SamplingExample.csproj", "{EE9C8984-9CFA-471E-A7E0-9A4A88967BAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamplingExample", "System.Reactive\ConcurrencyAndSynchonization\SamplingExample\SamplingExample.csproj", "{EE9C8984-9CFA-471E-A7E0-9A4A88967BAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangingTheSubscriptionUnsubscritionExecutionContext", "System.Reactive\ConcurrencyAndSynchonization\ChangingTheSubscriptionUnsubscritionExecutionContext\ChangingTheSubscriptionUnsubscritionExecutionContext.csproj", "{78511FF2-ABA2-4AC1-B7B2-E884438628F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangingTheSubscriptionUnsubscritionExecutionContext", "System.Reactive\ConcurrencyAndSynchonization\ChangingTheSubscriptionUnsubscritionExecutionContext\ChangingTheSubscriptionUnsubscritionExecutionContext.csproj", "{78511FF2-ABA2-4AC1-B7B2-E884438628F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartProcessAsAnotherUser", "StartProcessAsAnotherUser\StartProcessAsAnotherUser.csproj", "{98D4A061-0D6B-4330-92FD-E9B80650531D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -391,6 +393,10 @@ Global
 		{78511FF2-ABA2-4AC1-B7B2-E884438628F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78511FF2-ABA2-4AC1-B7B2-E884438628F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78511FF2-ABA2-4AC1-B7B2-E884438628F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D4A061-0D6B-4330-92FD-E9B80650531D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D4A061-0D6B-4330-92FD-E9B80650531D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D4A061-0D6B-4330-92FD-E9B80650531D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D4A061-0D6B-4330-92FD-E9B80650531D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
