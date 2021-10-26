@@ -137,7 +137,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamplingExample", "System.R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangingTheSubscriptionUnsubscritionExecutionContext", "System.Reactive\ConcurrencyAndSynchonization\ChangingTheSubscriptionUnsubscritionExecutionContext\ChangingTheSubscriptionUnsubscritionExecutionContext.csproj", "{78511FF2-ABA2-4AC1-B7B2-E884438628F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartProcessAsAnotherUser", "StartProcessAsAnotherUser\StartProcessAsAnotherUser.csproj", "{98D4A061-0D6B-4330-92FD-E9B80650531D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartProcessAsAnotherUser", "StartProcessAsAnotherUser\StartProcessAsAnotherUser.csproj", "{98D4A061-0D6B-4330-92FD-E9B80650531D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingSubscribeOnAndObserveOnTogether", "System.Reactive\ConcurrencyAndSynchonization\UsingSubscribeOnAndObserveOnTogether\UsingSubscribeOnAndObserveOnTogether.csproj", "{9AF3C2D9-F437-4A08-9588-C46826E364BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -397,6 +399,10 @@ Global
 		{98D4A061-0D6B-4330-92FD-E9B80650531D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98D4A061-0D6B-4330-92FD-E9B80650531D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98D4A061-0D6B-4330-92FD-E9B80650531D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF3C2D9-F437-4A08-9588-C46826E364BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF3C2D9-F437-4A08-9588-C46826E364BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF3C2D9-F437-4A08-9588-C46826E364BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF3C2D9-F437-4A08-9588-C46826E364BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -454,6 +460,7 @@ Global
 		{37E80FA3-883B-4669-8BF7-3E1552F7F72E} = {EC99D1F2-3094-43B4-99BA-C908318A0DEB}
 		{EE9C8984-9CFA-471E-A7E0-9A4A88967BAF} = {EC99D1F2-3094-43B4-99BA-C908318A0DEB}
 		{78511FF2-ABA2-4AC1-B7B2-E884438628F4} = {EC99D1F2-3094-43B4-99BA-C908318A0DEB}
+		{9AF3C2D9-F437-4A08-9588-C46826E364BE} = {EC99D1F2-3094-43B4-99BA-C908318A0DEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
