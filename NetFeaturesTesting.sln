@@ -149,6 +149,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatchingErrors", "System.Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnErrorResumeNext", "System.Reactive\ErrorHandling\OnErrorResumeNext\OnErrorResumeNext.csproj", "{4BAEAF39-BA68-4D83-9E40-D601DA186C6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetryingToSubscribeInCaseOfAnError", "System.Reactive\ErrorHandling\RetryingToSubscribeInCaseOfAnError\RetryingToSubscribeInCaseOfAnError.csproj", "{3F62B77C-CA94-4D72-8D73-15BABF26B1C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -423,6 +425,10 @@ Global
 		{4BAEAF39-BA68-4D83-9E40-D601DA186C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BAEAF39-BA68-4D83-9E40-D601DA186C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BAEAF39-BA68-4D83-9E40-D601DA186C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F62B77C-CA94-4D72-8D73-15BABF26B1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F62B77C-CA94-4D72-8D73-15BABF26B1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F62B77C-CA94-4D72-8D73-15BABF26B1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F62B77C-CA94-4D72-8D73-15BABF26B1C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -485,6 +491,7 @@ Global
 		{19DC7FBE-55D0-42FF-92C6-37E2287AC420} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
 		{CC30E085-D020-43C9-8784-6BD83E0CABD6} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
 		{4BAEAF39-BA68-4D83-9E40-D601DA186C6B} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
+		{3F62B77C-CA94-4D72-8D73-15BABF26B1C1} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
