@@ -147,11 +147,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ErrorHandling", "ErrorHandl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatchingErrors", "System.Reactive\ErrorHandling\CatchingErrors\CatchingErrors.csproj", "{CC30E085-D020-43C9-8784-6BD83E0CABD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnErrorResumeNext", "System.Reactive\ErrorHandling\OnErrorResumeNext\OnErrorResumeNext.csproj", "{4BAEAF39-BA68-4D83-9E40-D601DA186C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnErrorResumeNext", "System.Reactive\ErrorHandling\OnErrorResumeNext\OnErrorResumeNext.csproj", "{4BAEAF39-BA68-4D83-9E40-D601DA186C6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetryingToSubscribeInCaseOfAnError", "System.Reactive\ErrorHandling\RetryingToSubscribeInCaseOfAnError\RetryingToSubscribeInCaseOfAnError.csproj", "{3F62B77C-CA94-4D72-8D73-15BABF26B1C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetryingToSubscribeInCaseOfAnError", "System.Reactive\ErrorHandling\RetryingToSubscribeInCaseOfAnError\RetryingToSubscribeInCaseOfAnError.csproj", "{3F62B77C-CA94-4D72-8D73-15BABF26B1C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposingInADetermenisticWay", "System.Reactive\ErrorHandling\DisposingInADetermenisticWay\DisposingInADetermenisticWay.csproj", "{5C225B49-AC51-4D2E-9903-1DAD3214EC6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisposingInADetermenisticWay", "System.Reactive\ErrorHandling\DisposingInADetermenisticWay\DisposingInADetermenisticWay.csproj", "{5C225B49-AC51-4D2E-9903-1DAD3214EC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeterministicFinalization", "System.Reactive\ErrorHandling\DeterministicFinalization\DeterministicFinalization.csproj", "{D32BBF0A-BA1C-4A83-9B00-8992CEF6F531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -435,6 +437,10 @@ Global
 		{5C225B49-AC51-4D2E-9903-1DAD3214EC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C225B49-AC51-4D2E-9903-1DAD3214EC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C225B49-AC51-4D2E-9903-1DAD3214EC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32BBF0A-BA1C-4A83-9B00-8992CEF6F531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32BBF0A-BA1C-4A83-9B00-8992CEF6F531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32BBF0A-BA1C-4A83-9B00-8992CEF6F531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32BBF0A-BA1C-4A83-9B00-8992CEF6F531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -499,6 +505,7 @@ Global
 		{4BAEAF39-BA68-4D83-9E40-D601DA186C6B} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
 		{3F62B77C-CA94-4D72-8D73-15BABF26B1C1} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
 		{5C225B49-AC51-4D2E-9903-1DAD3214EC6D} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
+		{D32BBF0A-BA1C-4A83-9B00-8992CEF6F531} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
