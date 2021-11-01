@@ -24,6 +24,17 @@ namespace ExtensionsLibrary
                 () => Console.WriteLine("{0} - OnCompleted():", message));
         }
 
+        public static IObservable<T> AsWeakObservable<T>(this IObservable<T> source)
+        {
+            return Observable.Create<T>(o =>
+            {
+                var weakObserverProxy = new WeakObserverProxy<T>(o);
+                var subscription = source.Subscribe(weakObserverProxy);
+                weakObserverProxy.SetSubscription(subscription);
+                return weakObserverProxy.AsDisposable();
+            });
+        }
+
         #endregion
     }
 }
