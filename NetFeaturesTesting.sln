@@ -157,9 +157,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeterministicFinalization",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeakObserverExample", "System.Reactive\ErrorHandling\WeakObserverExample\WeakObserverExample.csproj", "{ED28D1EC-EC7D-4DE6-B915-0E32CAB89951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowAndFastZip", "System.Reactive\ErrorHandling\SlowAndFastZip\SlowAndFastZip.csproj", "{AD4113C0-0A3C-492E-819D-FAC32A8C422E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlowAndFastZip", "System.Reactive\ErrorHandling\SlowAndFastZip\SlowAndFastZip.csproj", "{AD4113C0-0A3C-492E-819D-FAC32A8C422E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlowAndFastCombineLatest", "System.Reactive\ErrorHandling\SlowAndFastCombineLatest\SlowAndFastCombineLatest.csproj", "{C9224CC9-DD6F-4DD9-9D52-1017A942926D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlowAndFastCombineLatest", "System.Reactive\ErrorHandling\SlowAndFastCombineLatest\SlowAndFastCombineLatest.csproj", "{C9224CC9-DD6F-4DD9-9D52-1017A942926D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Disposables", "Disposables", "{BBC32C35-3C1D-42DC-B230-C9A019A30EC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableCreate", "System.Reactive\Disposables\DisposableCreate\DisposableCreate.csproj", "{FE191303-F18D-4385-8C0D-FD328DE4DA59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -459,6 +463,10 @@ Global
 		{C9224CC9-DD6F-4DD9-9D52-1017A942926D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9224CC9-DD6F-4DD9-9D52-1017A942926D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9224CC9-DD6F-4DD9-9D52-1017A942926D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE191303-F18D-4385-8C0D-FD328DE4DA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE191303-F18D-4385-8C0D-FD328DE4DA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE191303-F18D-4385-8C0D-FD328DE4DA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE191303-F18D-4385-8C0D-FD328DE4DA59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -527,6 +535,8 @@ Global
 		{ED28D1EC-EC7D-4DE6-B915-0E32CAB89951} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
 		{AD4113C0-0A3C-492E-819D-FAC32A8C422E} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
 		{C9224CC9-DD6F-4DD9-9D52-1017A942926D} = {19DC7FBE-55D0-42FF-92C6-37E2287AC420}
+		{BBC32C35-3C1D-42DC-B230-C9A019A30EC9} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
+		{FE191303-F18D-4385-8C0D-FD328DE4DA59} = {BBC32C35-3C1D-42DC-B230-C9A019A30EC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
