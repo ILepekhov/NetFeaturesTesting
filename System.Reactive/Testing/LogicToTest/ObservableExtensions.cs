@@ -17,9 +17,8 @@ namespace LogicToTest
             }
 
             return source
-                .Buffer(TimeSpan.FromMilliseconds(10), burstSize)
-                .Where(x => x.Count > 0)
-                .Select(x => x[0]);
+                .Window(burstSize)
+                .SelectMany(window => window.Take(1));
         }
     }
 }
