@@ -163,11 +163,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlowAndFastCombineLatest", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Disposables", "Disposables", "{BBC32C35-3C1D-42DC-B230-C9A019A30EC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableCreate", "System.Reactive\Disposables\DisposableCreate\DisposableCreate.csproj", "{FE191303-F18D-4385-8C0D-FD328DE4DA59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisposableCreate", "System.Reactive\Disposables\DisposableCreate\DisposableCreate.csproj", "{FE191303-F18D-4385-8C0D-FD328DE4DA59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialDisposable", "System.Reactive\Disposables\SerialDisposable\SerialDisposable.csproj", "{5224080D-B667-4FEE-8D3C-54736F10B499}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialDisposable", "System.Reactive\Disposables\SerialDisposable\SerialDisposable.csproj", "{5224080D-B667-4FEE-8D3C-54736F10B499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefCountDisposableExample", "System.Reactive\Disposables\RefCountDisposableExample\RefCountDisposableExample.csproj", "{9E8B10E6-FCE7-4782-8120-4192F8516748}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefCountDisposableExample", "System.Reactive\Disposables\RefCountDisposableExample\RefCountDisposableExample.csproj", "{9E8B10E6-FCE7-4782-8120-4192F8516748}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{5C2FBF76-6AA3-4C33-AECB-16E1CCD7AAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicToTest", "System.Reactive\Testing\LogicToTest\LogicToTest.csproj", "{705C1023-F813-45FE-B7F5-AD4AD25E918A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "System.Reactive\Testing\UnitTests\UnitTests.csproj", "{BEC824A4-6D47-4F8D-8935-A1324603D1E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -479,6 +485,14 @@ Global
 		{9E8B10E6-FCE7-4782-8120-4192F8516748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E8B10E6-FCE7-4782-8120-4192F8516748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E8B10E6-FCE7-4782-8120-4192F8516748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705C1023-F813-45FE-B7F5-AD4AD25E918A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705C1023-F813-45FE-B7F5-AD4AD25E918A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705C1023-F813-45FE-B7F5-AD4AD25E918A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705C1023-F813-45FE-B7F5-AD4AD25E918A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC824A4-6D47-4F8D-8935-A1324603D1E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC824A4-6D47-4F8D-8935-A1324603D1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC824A4-6D47-4F8D-8935-A1324603D1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC824A4-6D47-4F8D-8935-A1324603D1E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -551,6 +565,9 @@ Global
 		{FE191303-F18D-4385-8C0D-FD328DE4DA59} = {BBC32C35-3C1D-42DC-B230-C9A019A30EC9}
 		{5224080D-B667-4FEE-8D3C-54736F10B499} = {BBC32C35-3C1D-42DC-B230-C9A019A30EC9}
 		{9E8B10E6-FCE7-4782-8120-4192F8516748} = {BBC32C35-3C1D-42DC-B230-C9A019A30EC9}
+		{5C2FBF76-6AA3-4C33-AECB-16E1CCD7AAD5} = {5BABA21E-40B2-4CBE-9961-9F8CCBCB6A87}
+		{705C1023-F813-45FE-B7F5-AD4AD25E918A} = {5C2FBF76-6AA3-4C33-AECB-16E1CCD7AAD5}
+		{BEC824A4-6D47-4F8D-8935-A1324603D1E9} = {5C2FBF76-6AA3-4C33-AECB-16E1CCD7AAD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
