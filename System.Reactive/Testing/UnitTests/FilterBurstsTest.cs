@@ -5,7 +5,7 @@ using Xunit;
 
 namespace UnitTests
 {
-    public class FilterBurstsTest
+    public class FilterBurstsTest : ReactiveTest
     {
         [Fact]
         public void FilterBursts_SourceOf10AndBurstSize5_TwoEmissions()
@@ -31,6 +31,37 @@ namespace UnitTests
 
             xs.FilterBursts(bufferSize)
                 .AssertEqual(expected.ToObservable());
+        }
+
+        [Fact]
+        public void FilterBursts_TwoBurstsWithGapInEachBurstEmitted()
+        {
+            var scheduler = new TestScheduler();
+
+            var xs = scheduler.CreateColdObservable(
+                OnNext(250, 1),
+                OnNext(275, 2),
+                OnNext(300, 3),
+
+                OnNext(400, -1),
+                OnNext(401, -2),
+                OnNext(405, -3),
+
+                OnCompleted<int>(500));
+
+            var testableObserver = scheduler.CreateObserver<int>();
+
+            xs.FilterBursts(3)
+                .Subscribe(testableObserver);
+
+            scheduler.Start();
+
+            testableObserver.Messages.AssertEqual(
+                OnNext(250, 1),
+                OnNext(400, -1),
+                OnCompleted<int>(500));
+
+            xs.Subscriptions.AssertEqual(Subscribe(0, 500));
         }
     }
 }
