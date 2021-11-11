@@ -1,5 +1,6 @@
 using LogicToTest;
 using Microsoft.Reactive.Testing;
+using System;
 using System.Reactive.Linq;
 using Xunit;
 
@@ -62,6 +63,33 @@ namespace UnitTests
                 OnCompleted<int>(500));
 
             xs.Subscriptions.AssertEqual(Subscribe(0, 500));
+        }
+
+        [Fact]
+        public void FilterBursts_InColdObservable()
+        {
+            var scheduler = new TestScheduler();
+
+            var xs = scheduler.CreateColdObservable(
+                OnNext(250, 1),
+                OnNext(258, 2),
+                OnNext(262, 3),
+
+                OnNext(450, -1),
+                OnNext(451, -2),
+                OnNext(460, -3),
+
+                OnCompleted<int>(500));
+
+            var res = scheduler.Start(
+                () => xs.FilterBursts(TimeSpan.FromTicks(10), scheduler));
+
+            res.Messages.AssertEqual(
+                OnNext(450, 1),
+                OnNext(650, -1),
+                OnCompleted<int>(700));
+
+            xs.Subscriptions.AssertEqual(Subscribe(Subscribed, 700));
         }
     }
 }
