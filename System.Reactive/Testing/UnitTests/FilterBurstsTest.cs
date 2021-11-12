@@ -1,6 +1,9 @@
 using LogicToTest;
 using Microsoft.Reactive.Testing;
+using Moq;
 using System;
+using System.Reactive;
+using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using Xunit;
 
@@ -90,6 +93,51 @@ namespace UnitTests
                 OnCompleted<int>(700));
 
             xs.Subscriptions.AssertEqual(Subscribe(Subscribed, 700));
+        }
+
+        [Fact]
+        public void BurstOverFiveSeconds_RiskyTemperature_TwoAlerts()
+        {
+            var testScheduler = new TestScheduler();
+            var oneSecond = TimeSpan.TicksPerSecond;
+
+            var temperatures = testScheduler.CreateHotObservable(OnNext(310, 500d));
+
+            var proximities = testScheduler.CreateHotObservable(
+                OnNext(100, Unit.Default),
+                OnNext(1 * oneSecond - 1, Unit.Default),
+                OnNext(2 * oneSecond - 1, Unit.Default),
+                OnNext(3 * oneSecond - 1, Unit.Default),
+                OnNext(4 * oneSecond - 1, Unit.Default),
+                OnNext(5 * oneSecond - 1, Unit.Default),
+                OnNext(6 * oneSecond - 1, Unit.Default));
+
+            var concurrencyProviderMoq = new Mock<IConcurrencyProvider>();
+
+            concurrencyProviderMoq.SetupGet(x => x.TimeBasedOperations).Returns(testScheduler);
+            concurrencyProviderMoq.SetupGet(x => x.Task).Returns(testScheduler);
+            concurrencyProviderMoq.SetupGet(x => x.Thread).Returns(testScheduler);
+            concurrencyProviderMoq.SetupGet(x => x.Dispatcher).Returns(testScheduler);
+
+            var tempSensorMoq = new Mock<ITemperatureSensor>();
+            tempSensorMoq.Setup(x => x.Readings).Returns(temperatures);
+
+            var proxSensorMoq = new Mock<IProximitySensor>();
+            proxSensorMoq.Setup(x => x.Readings).Returns(proximities);
+
+            var monitor = new MachineMonitor(
+                concurrencyProviderMoq.Object,
+                tempSensorMoq.Object,
+                proxSensorMoq.Object);
+
+            var result = testScheduler.Start(() => monitor.ObserveAlerts(),
+                0,
+                0,
+                long.MaxValue);
+
+            result.Messages.AssertEqual(
+                OnNext(310, (Alert a) => a.Date.Ticks == 310),
+                OnNext(6 * oneSecond - 1, (Alert a) => true));
         }
     }
 }
