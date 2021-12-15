@@ -175,7 +175,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicToTest", "System.React
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "System.Reactive\Testing\UnitTests\UnitTests.csproj", "{BEC824A4-6D47-4F8D-8935-A1324603D1E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSchedulerBaseUsing", "System.Reactive\Testing\TestSchedulerBaseUsing\TestSchedulerBaseUsing.csproj", "{43E99F3C-4A49-45FB-A4AF-7A87292C6B3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSchedulerBaseUsing", "System.Reactive\Testing\TestSchedulerBaseUsing\TestSchedulerBaseUsing.csproj", "{43E99F3C-4A49-45FB-A4AF-7A87292C6B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveUIDemo", "ReactiveUIDemo\ReactiveUIDemo.csproj", "{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -499,6 +501,10 @@ Global
 		{43E99F3C-4A49-45FB-A4AF-7A87292C6B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43E99F3C-4A49-45FB-A4AF-7A87292C6B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43E99F3C-4A49-45FB-A4AF-7A87292C6B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
