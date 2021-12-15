@@ -177,7 +177,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "System.Reactiv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSchedulerBaseUsing", "System.Reactive\Testing\TestSchedulerBaseUsing\TestSchedulerBaseUsing.csproj", "{43E99F3C-4A49-45FB-A4AF-7A87292C6B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveUIDemo", "ReactiveUIDemo\ReactiveUIDemo.csproj", "{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactiveUIDemo", "ReactiveUIDemo\ReactiveUIDemo.csproj", "{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatR", "MediatR", "{F22C7379-3274-44AD-8DF1-C8E3C1A1A257}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.API", "MediatR\EmployeeManagement.API\EmployeeManagement.API.csproj", "{AECB4A14-1D90-4F56-8E84-06326DECA95A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Library", "MediatR\EmployeeManagement.Library\EmployeeManagement.Library.csproj", "{2A1B7240-1426-4778-9F88-557B7E13026E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -505,6 +511,14 @@ Global
 		{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD8DFD92-45AF-4526-9C34-8A2495AB1C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECB4A14-1D90-4F56-8E84-06326DECA95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECB4A14-1D90-4F56-8E84-06326DECA95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECB4A14-1D90-4F56-8E84-06326DECA95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECB4A14-1D90-4F56-8E84-06326DECA95A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1B7240-1426-4778-9F88-557B7E13026E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1B7240-1426-4778-9F88-557B7E13026E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1B7240-1426-4778-9F88-557B7E13026E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1B7240-1426-4778-9F88-557B7E13026E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -581,6 +595,8 @@ Global
 		{705C1023-F813-45FE-B7F5-AD4AD25E918A} = {5C2FBF76-6AA3-4C33-AECB-16E1CCD7AAD5}
 		{BEC824A4-6D47-4F8D-8935-A1324603D1E9} = {5C2FBF76-6AA3-4C33-AECB-16E1CCD7AAD5}
 		{43E99F3C-4A49-45FB-A4AF-7A87292C6B3E} = {5C2FBF76-6AA3-4C33-AECB-16E1CCD7AAD5}
+		{AECB4A14-1D90-4F56-8E84-06326DECA95A} = {F22C7379-3274-44AD-8DF1-C8E3C1A1A257}
+		{2A1B7240-1426-4778-9F88-557B7E13026E} = {F22C7379-3274-44AD-8DF1-C8E3C1A1A257}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {418E619E-08E2-4880-B265-4B12977EE66F}
