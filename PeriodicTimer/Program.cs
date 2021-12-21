@@ -10,7 +10,7 @@ try
 
     while (await timer.WaitForNextTickAsync(cts.Token))
     {
-        var timeDifference = (DateTime.Now - startTime).Milliseconds;
+        var timeDifference = (DateTime.Now - startTime).TotalMilliseconds;
 
         Console.WriteLine($"Offset: {timeDifference}");
     }
