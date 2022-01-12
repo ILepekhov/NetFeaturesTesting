@@ -201,7 +201,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyNameWithExpression"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongRunningTaskStateExample", "LongRunningTaskStateExample\LongRunningTaskStateExample.csproj", "{74709833-9C0F-4C48-8BC0-085B766C507A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructByRefChangingTest", "StructByRefChangingTest\StructByRefChangingTest.csproj", "{6AC46620-28DA-4CF5-A325-98BFDF321DA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructByRefChangingTest", "StructByRefChangingTest\StructByRefChangingTest.csproj", "{6AC46620-28DA-4CF5-A325-98BFDF321DA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KirillLinqQueryTesting", "KirillLinqQueryTesting\KirillLinqQueryTesting.csproj", "{E220EAB7-50CE-473B-81A2-1020FDEC7500}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -569,6 +571,10 @@ Global
 		{6AC46620-28DA-4CF5-A325-98BFDF321DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AC46620-28DA-4CF5-A325-98BFDF321DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AC46620-28DA-4CF5-A325-98BFDF321DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E220EAB7-50CE-473B-81A2-1020FDEC7500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E220EAB7-50CE-473B-81A2-1020FDEC7500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E220EAB7-50CE-473B-81A2-1020FDEC7500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E220EAB7-50CE-473B-81A2-1020FDEC7500}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
