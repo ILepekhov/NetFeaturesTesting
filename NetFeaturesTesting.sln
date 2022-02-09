@@ -209,7 +209,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneCellSelectServerAlgoritm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistryStartupRegistrationTest", "RegistryStartupRegistrationTest\RegistryStartupRegistrationTest.csproj", "{2B9859A5-C015-42E3-9CD1-C586AAABFB66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongRunningAsyncTaskExample", "LongRunningAsyncTaskExample\LongRunningAsyncTaskExample.csproj", "{21DA16C4-708C-4831-BC4C-D987E3A4E395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongRunningAsyncTaskExample", "LongRunningAsyncTaskExample\LongRunningAsyncTaskExample.csproj", "{21DA16C4-708C-4831-BC4C-D987E3A4E395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{60EBD396-3D8D-4521-ADC7-79FA393DA116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -593,6 +595,10 @@ Global
 		{21DA16C4-708C-4831-BC4C-D987E3A4E395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21DA16C4-708C-4831-BC4C-D987E3A4E395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21DA16C4-708C-4831-BC4C-D987E3A4E395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60EBD396-3D8D-4521-ADC7-79FA393DA116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60EBD396-3D8D-4521-ADC7-79FA393DA116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60EBD396-3D8D-4521-ADC7-79FA393DA116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60EBD396-3D8D-4521-ADC7-79FA393DA116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
