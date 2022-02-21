@@ -215,7 +215,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarrierTest", "BarrierTest\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GrokkingAlgorithms", "GrokkingAlgorithms", "{C792CBDD-A5A7-48B0-9483-B07D831865E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "GrokkingAlgorithms\BinarySearch\BinarySearch.csproj", "{5BFE0B92-BD52-4F32-A244-70170BA5525D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "GrokkingAlgorithms\BinarySearch\BinarySearch.csproj", "{5BFE0B92-BD52-4F32-A244-70170BA5525D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpersonatorExample", "ImpersonatorExample\ImpersonatorExample.csproj", "{5C45C80B-C821-47F3-89CF-31E82E66138B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -607,6 +609,10 @@ Global
 		{5BFE0B92-BD52-4F32-A244-70170BA5525D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BFE0B92-BD52-4F32-A244-70170BA5525D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BFE0B92-BD52-4F32-A244-70170BA5525D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C45C80B-C821-47F3-89CF-31E82E66138B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C45C80B-C821-47F3-89CF-31E82E66138B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C45C80B-C821-47F3-89CF-31E82E66138B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C45C80B-C821-47F3-89CF-31E82E66138B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
