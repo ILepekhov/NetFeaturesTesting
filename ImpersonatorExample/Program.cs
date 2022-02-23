@@ -1,60 +1,39 @@
 ﻿using Microsoft.Win32.SafeHandles;
-using System.Runtime.InteropServices;
+using SimpleImpersonation;
 using System.Security.Principal;
+
+namespace ImpersonatorExample;
 
 public class Program
 {
-    [DllImport("advapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-    public static extern bool LogonUser(string lpszUsername, string lpszDomain, string lpszPassword,
-        int dwLogonType, int dwLogonProvider, out SafeAccessTokenHandle phToken);
-
     public static void Main()
     {
-        // Get the user token for the specified user, domain, and password using the   
-        // unmanaged LogonUser method.   
-        // The local machine name can be used for the domain name to impersonate a user on this machine.  
-        Console.Write("Enter the name of the domain on which to log on: ");
-        string domainName = Console.ReadLine();
+        UserCredentials credentials = new("10.10.10.1", "ILepekhov", "22Nuttertools10");
 
-        Console.Write("Enter the login of a user on {0} that you wish to impersonate: ", domainName);
-        string userName = Console.ReadLine();
+        using SafeAccessTokenHandle handle = credentials.LogonUser(LogonType.NewCredentials);
 
-        Console.Write("Enter the password for {0}: ", userName);
+        WindowsIdentity.RunImpersonated(handle, WriteUserNameToFile);
 
-        const int LOGON32_PROVIDER_DEFAULT = 0;
-        //This parameter causes LogonUser to create a primary token.   
-        const int LOGON32_LOGON_INTERACTIVE = 2;
+        WriteUserNameToFile();
 
-        // Call LogonUser to obtain a handle to an access token.   
-        SafeAccessTokenHandle safeAccessTokenHandle;
-        bool returnValue = LogonUser(userName, domainName, Console.ReadLine(),
-            LOGON32_LOGON_INTERACTIVE, LOGON32_PROVIDER_DEFAULT,
-            out safeAccessTokenHandle);
+        Console.WriteLine("Press Enter to exit");
+        Console.ReadLine();
+    }
 
-        if (false == returnValue)
+    private static void WriteUserNameToFile()
+    {
+        string currentUserName = WindowsIdentity.GetCurrent().Name.Replace('\\', '-');
+        string path = @$"\\10.10.10.1\TempShare\Created by {currentUserName}.txt";
+
+        Console.WriteLine("Writing file for " + currentUserName);
+
+        try
         {
-            int ret = Marshal.GetLastWin32Error();
-            Console.WriteLine("LogonUser failed with error code : {0}", ret);
-            throw new System.ComponentModel.Win32Exception(ret);
+            File.WriteAllText(path, currentUserName);
         }
-
-        Console.WriteLine("Did LogonUser Succeed? " + (returnValue ? "Yes" : "No"));
-        // Check the identity.  
-        Console.WriteLine("Before impersonation: " + WindowsIdentity.GetCurrent().Name);
-
-        // Note: if you want to run as unimpersonated, pass  
-        //       'SafeAccessTokenHandle.InvalidHandle' instead of variable 'safeAccessTokenHandle'  
-        WindowsIdentity.RunImpersonated(
-            safeAccessTokenHandle,
-            // User action  
-            () =>
-            {
-                // Check the identity.  
-                Console.WriteLine("During impersonation: " + WindowsIdentity.GetCurrent().Name);
-            }
-            );
-
-        // Check the identity again.  
-        Console.WriteLine("After impersonation: " + WindowsIdentity.GetCurrent().Name);
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Failed to write to the file {path}. {ex.Message}");
+        }
     }
 }
